@@ -1,17 +1,17 @@
 const db = require('../db-config.js');
-console.log("in scheme model");
+
 module.exports = {
     find,
     findById,
     findSteps,
     add,
     update,
-    remove
+    remove,
+    addStep
 }
 
 // resolves to an array of schemes
 function find() {
-    console.log("in find");
     return db('schemes');
 }
 
@@ -40,13 +40,21 @@ function add(scheme) {
         })
 }
 
+// addStep option One
+function addStep(step, scheme_id) {
+    return db('steps')
+    .insert(step)
+    .then(steps => {
+        return steps[0];
+    })
+}
+
 // update
 function update(changes, id) {
     return db('schemes')
         .where({ id })
         .update(changes)
 }
-
 
 // remove
 function remove(id) {

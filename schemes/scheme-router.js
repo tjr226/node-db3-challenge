@@ -6,7 +6,6 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    console.log("in try attempt");
     const schemes = await Schemes.find();
     res.json(schemes);
   } catch (err) {
