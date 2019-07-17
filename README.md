@@ -11,12 +11,14 @@
 
 For this lab you will
 
-- write SQL statements against a pre-populated database using an online tool. Once you have the correct SQL Statement for each query, write it inside the queries.md file under the appropriate heading.
-- write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
+- [ x ] write SQL statements against a pre-populated database using an online tool. Once you have the correct SQL Statement for each query, write it inside the queries.md file under the appropriate heading.
+- [ ] write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
 
 ### Multi Table Queries
 
 Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top) using the **Google Chrome (or Chromium if you use Linux) browser** and write _SQL queries_ for the following requirements:
+
+*** WRITTEN IN QUERIES DOC ***
 
 - Display the ProductName and CategoryName for all products in the database. Shows 76 records.
 - Display the OrderID and ShipperName for all orders placed before January 9, 1997. Shows 161 records.
@@ -81,9 +83,9 @@ The following endpoints are available to test the functionality of the model met
 
 ## Stretch Problems
 
-- In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
-  - Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
-  - Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.
-- Add the following method to your API
-  - `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
-  - You may use `POST /api/schemes/:id/addStep` to test this method.
+- [ x ] In [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top):
+  - [ x ] Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
+  - [ x ] Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.
+- [ ] Add the following method to your API
+  - [ ] `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
+  - [ ] You may use `POST /api/schemes/:id/addStep` to test this method.
